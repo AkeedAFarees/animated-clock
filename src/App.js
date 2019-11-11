@@ -1,24 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './clock.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2> Clock React App</h2>
+
+      <div className="clock-box">
+        <div className="clock-face">
+          <div className="hours-container">
+              <div className="hours"></div>
+          </div>
+          <div className="minutes-container">
+              <div className="minutes"></div>
+          </div>
+          <div className="centre">
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
